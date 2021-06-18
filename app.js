@@ -12,16 +12,16 @@ require('dotenv').config();
 require('./src/database/sync');
 require('./src/database/associations');
 
-
+//CORS
+app.use( cors() )
 
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({extended: true}))
 app.use(morgan('dev'))
-app.use(express.static(__dirname + '/public/'))
+app.use(express.static('public'))
 
-//CORS
-app.use( cors() )
+
 
 //Routes
 const EmployeeRoute = require('./src/routes/employees');
