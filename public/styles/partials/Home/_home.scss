@@ -1,0 +1,14 @@
+
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  column-gap: 1rem;
+  align-content: center;
+}
+
+.home_image-container {
+  img {
+    max-height: 450px;
+  }
+}
