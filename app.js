@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
+require('dotenv').config();
 
 const app = express()
 const PORT = process.env.PORT || 4000
@@ -8,7 +9,6 @@ const PORT = process.env.PORT || 4000
 // Inicializations
 require('path');
 require('./src/database/conect');
-require('dotenv').config();
 require('./src/database/sync');
 require('./src/database/associations');
 
