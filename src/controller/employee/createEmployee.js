@@ -4,8 +4,9 @@ const router = express.Router();
 
 const createEmployee =  router.post('/', async (req, res)=> {
     try {
+
         const { dni } = req.body
-        const existingEmployee = Employee.findOne({where: { dni }})
+        const existingEmployee = await Employee.findOne({where: { dni }})
 
         if( existingEmployee ) {
             return res.status(400).json({
