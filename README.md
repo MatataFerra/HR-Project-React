@@ -6,3 +6,5 @@
 
 #### Adicionalmente se utlizaron componentes de Material-UI para agilizar el desarrollo.
 
+## La nueva versión se encuentra en desarrollo y se encuentra alojada en https://apphr-react.herokuapp.com/
+
