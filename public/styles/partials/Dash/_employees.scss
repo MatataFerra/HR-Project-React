@@ -7,13 +7,15 @@
   outline: none !important;
 }
 
-
-.employees__button-edit {
-  margin-right: 0.3rem;
+.employees__buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
 }
+
 
 .employees__button-edit,
 .employees__button-delete{
-  width: 50px;
+  width: 30px;
   
 }

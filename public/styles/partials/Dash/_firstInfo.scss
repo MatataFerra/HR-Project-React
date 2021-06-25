@@ -1,0 +1,26 @@
+.firstInfo__info-container__employee {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstInfo__first-info {
+  // background-color: #dbdbdb;
+  // margin-right: 0.5rem;
+  // width: 20%;
+  box-shadow: 0px 10px 10px -6px black;
+  border-radius: 5px;
+  padding: 1rem;
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+}
+
+.firstInfo__info-employee{
+  font-size: 1.5rem;
+}
+
+.firstInfo__img {
+  height: 9rem; 
+}

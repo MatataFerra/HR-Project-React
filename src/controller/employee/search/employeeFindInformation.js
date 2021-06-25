@@ -70,7 +70,7 @@ const allEmployeeInfo = router.get('/info/:dni' , async (req, res)=> {
         console.log(error);
         return res.status(404).json({
             ok: false,
-            Error: 'Hubo un error a la hora de cambiar la información, intente nuevamente'
+            Message: 'Hubo un error a la hora de cambiar la información, intente nuevamente'
         })
     }
 
