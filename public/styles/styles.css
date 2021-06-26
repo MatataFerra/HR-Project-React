@@ -1,3 +1,16 @@
+/* Global configurations */
+h1, h2, p {
+  -webkit-margin-before: 0em !important;
+          margin-block-start: 0em !important;
+  -webkit-margin-after: 0em !important;
+          margin-block-end: 0em !important;
+}
+
+ul {
+  -webkit-padding-start: 0px !important;
+          padding-inline-start: 0px !important;
+}
+
 @font-face {
   font-family: "MAXWELL_BOLD";
   src: url("../assets/fonts/MAXWELL_BOLD.ttf");
@@ -73,7 +86,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 1024px) {
   .buttons__btn-Register,
   .buttons__btn-Login {
     width: 35%;
@@ -88,7 +101,7 @@
   }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 800px) {
   .buttons__btn-Register,
   .buttons__btn-Login {
     width: 35%;
@@ -159,7 +172,7 @@
   color: #be00be;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 800px) {
   .description__title {
     font-size: 4rem;
     text-align: center;
@@ -198,17 +211,23 @@
   max-height: 450px;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 1024px) {
   .home__container {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 1rem;
+    height: 100vh;
   }
   .home__desk-img {
     display: none;
   }
+  .home_image-container {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 800px) {
   .home__container {
     display: block;
     padding: 1rem;
@@ -462,7 +481,7 @@
           filter: grayscale(0);
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1024px) {
   .dash__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -486,7 +505,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 800px) {
   .dash__modules-option_menu {
     margin-right: 0.5rem;
   }
@@ -538,7 +557,7 @@
   width: 100%;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1024px) {
   .search__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -553,7 +572,7 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 800px) {
   .search__field-container {
     min-width: 10rem;
   }
@@ -678,7 +697,20 @@
           flex-direction: column;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 1024px) {
+  .info__profile-container {
+    display: none;
+  }
+  .contracts__info-container {
+    width: 100vw;
+  }
+  .contracts__container {
+    padding: 0;
+    width: unset;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .contracts__container {
     width: unset;
   }
@@ -699,19 +731,6 @@
   }
   .info__text {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 810px) {
-  .info__profile-container {
-    display: none;
-  }
-  .contracts__info-container {
-    width: 100vw;
-  }
-  .contracts__container {
-    padding: 0;
-    width: unset;
   }
 }
 
@@ -743,7 +762,7 @@
   height: 9rem;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 800px) {
   .firstInfo__info-container__employee {
     display: block;
   }
@@ -770,23 +789,10 @@
   font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 800px) {
   .secondInfo__second-info {
     width: unset;
   }
-}
-
-/* Global configurations */
-h1, h2, p {
-  -webkit-margin-before: 0em !important;
-          margin-block-start: 0em !important;
-  -webkit-margin-after: 0em !important;
-          margin-block-end: 0em !important;
-}
-
-ul {
-  -webkit-padding-start: 0px !important;
-          padding-inline-start: 0px !important;
 }
 
 body {

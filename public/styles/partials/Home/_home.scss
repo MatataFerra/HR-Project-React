@@ -12,7 +12,23 @@
   max-height: 450px;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: $MaxWidth-tablet) {
+  .home__container {
+    display: flex;
+    padding: 1rem;
+    height: 100vh;
+  }
+
+  .home__desk-img {
+    display: none;
+  }
+
+  .home_image-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $MaxWidth-phone) {
 
   .home__container {
     display: block;
@@ -23,15 +39,4 @@
     display: none;
   }
   
-}
-
-@media only screen and (max-width: 810px) {
-  .home__container {
-    display: block;
-    padding: 1rem;
-  }
-
-  .home__desk-img {
-    display: none;
-  }
 }

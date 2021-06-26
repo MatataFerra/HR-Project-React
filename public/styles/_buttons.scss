@@ -66,7 +66,9 @@ $height: 40px;
   display: none;
 }
 
-@media only screen and (max-width: 350px) {
+
+
+@media only screen and (max-width: $MaxWidth-tablet) {
   .buttons__btn-Register,
   .buttons__btn-Login {
     width: 35%;
@@ -81,7 +83,7 @@ $height: 40px;
   }
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: $MaxWidth-phone) {
   .buttons__btn-Register,
   .buttons__btn-Login {
     width: 35%;
