@@ -70,4 +70,51 @@
 }
 
 
+@media only screen and (max-width: 350px) {
+  .contracts__container {
+    width: unset;
+  }
+
+  .contracts__info-container {
+    width: 100%;
+  }
+
+  .info__profile-container {
+    display: none;
+  }
+
+  .info__data-container {
+    width: 100vw;
+  }
+
+  .info__container {
+    display: block;
+  }
+
+  .info__title {
+    h2, p {
+      display: none;
+    }
+  }
+
+  .info__text {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .info__profile-container {
+    display: none;
+  }
+
+  .contracts__info-container {
+    width: 100vw;
+  }
+
+  .contracts__container {
+    padding: 0;
+    width: unset;
+  }
+}
+
 

@@ -8,8 +8,30 @@
   height: 100vh
 }
 
-.home_image-container {
-  img {
-    max-height: 450px;
+.home__desk-img {
+  max-height: 450px;
+}
+
+@media only screen and (max-width: 350px) {
+
+  .home__container {
+    display: block;
+    padding: 1rem;
+  }
+
+  .home__desk-img {
+    display: none;
+  }
+  
+}
+
+@media only screen and (max-width: 810px) {
+  .home__container {
+    display: block;
+    padding: 1rem;
+  }
+
+  .home__desk-img {
+    display: none;
   }
 }

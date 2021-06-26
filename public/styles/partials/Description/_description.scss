@@ -53,3 +53,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 350px) {
+  .description__title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem !important;
+  }
+
+  .description__container {
+    width: 100%;
+    padding: 0.5rem;
+    p {
+      margin-bottom: 1rem !important;
+    }
+  }
+
+  .description__ul {
+    flex-wrap: wrap;
+    margin-bottom: 1rem !important;
+  }
+}
